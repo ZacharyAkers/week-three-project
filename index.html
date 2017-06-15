@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculator</title>
-        <link rel="stylesheet" href="main.css"
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
 
+    <form name="case">
+        <div class="calc-body">
+            <input type="button" id="clearMem" class="digit" value="C" onclick="runC()">
+            <input name="display" id="display" value="">
 
-        <div class="container">
-            <div class="content-row">
-                <div id="clearButton" class="square">C</div>
-                <div id="calWindow" class="text-content"></div>
-            </div>
-            <div class="content-row">
-                <div class="square" id="sevenButton">7</div>
-                <div class="square" id="eightButton">8</div>
-                <div class="square" id="nineButton">9</div>
-                <div class="square" id="dividerButton">/</div>
-            </div>
-            <div class="content-row">
-                <div class="square" id="fourButton">4</div>
-                <div class="square" id="fiveButton">5</div>
-                <div class="square" id="sixButton">6</div>
-                <div class="square" id="multiplyButton">X</div>
-            </div>
-            <div class="content-row">
-                <div class="square" id="oneButton">1</div>
-                <div class="square" id="twoButton">2</div>
-                <div class="square" id="threeButton">3</div>
-                <div class="square" id="minusButton">-</div>
-            </div>
-            <div class="content-row">
-                <div class="square" id="zeroButton">0</div>
-                <div class="square" id="periodButton">.</div>
-                <div class="square" id="equalButton">=</div>
-                <div class="square" id="addButton">+</div>
-            </div>
+            <input type="button" class="digit" value="7" onclick="num7()">
+            <input type="button" class="digit" value="8" onclick="num8()">
+            <input type="button" class="digit" value="9" onclick="num9()">
+            <input type="button" id="plus" 	class="oper" 	value="+"  onclick="runPlus()">
+
+            <input type="button" class="digit" value="4" onclick="num4()">
+            <input type="button" class="digit" value="5" onclick="num5()">
+            <input type="button" class="digit" value="6" onclick="num6()">
+            <input type="button" id="minus" 	class="oper" 	value="-" onclick="runMinus()" >
+
+            <input type="button" class="digit" value="1" onclick="num1()">
+            <input type="button" class="digit" value="2" onclick="num2()">
+            <input type="button" class="digit" value="3" onclick="num3()">
+            <input type="button" id="divide" 	class="oper" 	value="/" onclick="runDivide()" >
+    
+            <input type="button" class="digit" value="0" onclick="num0()">
+            <input type="button" id="clearMem" class="digit" value="." onclick="runPeriod()">
+    
+ 
+	        <input type="button" id="equal" 	class="digit"	value="=" onclick="runEquals()">
+            <input type="button" id="multiply" 	class="oper" 	value="*" onclick="runMultiply()">
         </div>
+    </form>
 
-        <script src="main.js"></script>
-    </body>
+    <script src="main.js"></script>
+  </body>
 </html>

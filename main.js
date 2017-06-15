@@ -1,27 +1,76 @@
-const clearBtn = document.querySelector("#clearButton");
-const calWindow = document.querySelector("#calWindow");
-const sevenBtn = document.querySelector("#sevenButton");
-const eightBtn = document.querySelector("#eightButton");
-const nineBtn = document.querySelector("#nineButton");
-const dividerBtn = document.querySelector("#dividerButton")
-const fourBtn = document.querySelector("#fourButton");
-const fiveBtn = document.querySelector("#fiveButton");
-const sixBtn = document.querySelector("#sixButton");
-const multiplyBtn = document.querySelector("#multiplyButton");
-const oneBtn = document.querySelector("#oneButton");
-const twoBtn = document.querySelector("#twoButton");
-const threeBtn = document.querySelector("#threeButton");
-const minusBtn = document.querySelector("#minusButton");
-const zeroBtn = document.querySelector("#zeroButton");
-const periodBtn = document.querySelector("#periodButton");
-const equalBtn = document.querySelector("#equalButton");
-const addBtn = document.querySelector("#Button")
-let btnList = document.querySelectorAll(".square");
+function num7(){
 
-for (let i = 0; i < btnList.length; i++) {
-    let btn = btnList[i];
+	document.case.display.value += "7"
+};
+function num8(){
 
-    btn.addEventListener("click", function(event) {
-        console.log("you clicked button number " + i)
-    });
+	document.case.display.value += "8"
+};
+function num9(){
+
+	document.case.display.value += "9"
+};
+function num4(){
+
+	document.case.display.value += "4"
+};
+function num5(){
+
+	document.case.display.value += "5"
+};
+
+function num6(){
+
+	document.case.display.value += "6"
+};
+
+function num1(){
+
+	document.case.display.value += "1"
+};
+
+function num2(){
+
+	document.case.display.value += "2"
+};
+
+function num3(){
+
+	document.case.display.value += "3"
+};
+
+function num0(){
+
+	document.case.display.value += "0"
+};
+function runPlus(){
+
+	document.case.display.value += "+"
+};
+function runMinus(){
+
+	document.case.display.value += "-"
+};
+function runDivide(){
+
+	document.case.display.value += "/"
+};
+function runMultiply(){
+
+	document.case.display.value += "*"
+};
+
+function runC(){
+
+	document.case.display.value = ""
+};
+
+function runPeriod() {
+    document.case.display.value += "."
+};
+
+
+function runEquals() {
+	var equals = eval(document.case.display.value)
+	document.case.display.value = equals;
 }
